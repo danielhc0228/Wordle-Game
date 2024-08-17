@@ -1,0 +1,241 @@
+/* App container settings */
+.App {
+  text-align: center;
+  background-color: #121212;
+  width: 100vw;
+  height: 100vh;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  overflow: hidden;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+}
+
+
+/* Navigation bar */
+nav {
+  height: 60px;
+  width: 100%;
+  margin: 0;
+  border-bottom: 1px solid grey;
+  display: flex;
+  align-items: center;
+  justify-content: center; /* Center horizontally */
+  padding: 0 20px;
+  box-sizing: border-box;
+  
+}
+
+/* Position the retry button */
+#retry-button {
+  position: absolute;
+  left: 30px; /* Adjust as needed */
+  width: 75px;
+  height: 35px;
+  margin: 4px;
+  border-radius: 4px;
+  display: grid;
+  place-items: center;
+  font-size: 14px;
+  background-color: rgb(51, 170, 85);
+  color: white;
+  font-family: Arial, Helvetica, sans-serif;
+  cursor: pointer;
+}
+
+/* Title styling */
+#title {
+  text-align: center;
+}
+
+/* Game container */
+.game {
+  flex: 1;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* Board settings */
+.board {
+  width: 70vw;
+  max-width: 320px;
+  height: 35vh;
+  max-height: 300px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 5px;
+  box-sizing: border-box;
+}
+
+/* Row settings */
+.row {
+  flex: 1;
+  display: flex;
+  flex-direction: row;
+}
+
+/* Letter styling */
+.letter {
+  flex: 1;
+  border: 1px solid grey;
+  margin: 3px;
+  display: grid;
+  place-items: center;
+  font-size: calc(1.2vmin + 16px);
+  font-weight: bolder;
+  color: white;
+  font-family: Arial, Helvetica, sans-serif;
+  aspect-ratio: 1 / 1;
+}
+
+/* Keyboard container */
+.keyboard {
+  width: 80vw;
+  max-width: 350px;
+  max-height: 200px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+/* Key rows */
+.line1, .line2, .line3 {
+  display: flex;
+  justify-content: center;
+}
+
+/* Key styling */
+.key {
+  width: 35px;
+  height: 45px;
+  margin: 4px;
+  border-radius: 4px;
+  display: grid;
+  place-items: center;
+  font-size: 14px;
+  background-color: grey;
+  color: white;
+  font-family: Arial, Helvetica, sans-serif;
+  cursor: pointer;
+}
+
+/* Big key settings */
+#big {
+  width: 70px;
+}
+
+/* Disabled key styling */
+#disabled {
+  background-color: #3a393c;
+}
+
+/* Letter states */
+#correct {
+  background-color: #528d4e;
+}
+
+#almost {
+  background-color: #b49f39;
+}
+
+#error {
+  background-color: #3a393c;
+}
+
+
+/* Media query for mobile devices */
+@media (max-width: 1100px) {
+  .board {
+    width: 90vw;
+    max-width: 700px;
+    height: 35vh;
+    max-height: 300px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 5px;
+    box-sizing: border-box;
+  }
+  .keyboard {
+    margin-bottom: 20px;
+  }
+  .key {
+    width: 80px;
+    height: 65px;
+    margin: 1px;
+    border-radius: 4px;
+    font-size: 30px;
+  }
+
+  .letter {
+    font-size: calc(4.2vmin + 13px);
+  }
+  nav {
+    height: 90px;
+    margin-bottom: 20px;
+  }
+  #title {
+    font-size:50px;
+  }
+
+    #retry-button {
+      width: 80px; /* Smaller width for mobile */
+      height: 50px; /* Smaller height for mobile */
+      font-size: 22px; /* Smaller font size for mobile */
+      left: 10px; /* Adjust position if needed */
+    }
+  }
+
+
+/* Media query for mobile devices */
+@media (max-width: 800px) {
+.board {
+  width: 90vw;
+  max-width: 400px;
+  height: 35vh;
+  max-height: 300px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 5px;
+  box-sizing: border-box;
+}
+.keyboard {
+  margin-bottom: 100px;
+}
+#big {
+  width: 50px;
+}
+.key {
+  width: 35px;
+  height: 58px;
+  margin: 1px;
+  border-radius: 4px;
+  display: grid;
+  place-items: center;
+  font-size: 18px;
+  background-color: grey;
+  color: white;
+  font-family: Arial, Helvetica, sans-serif;
+  cursor: pointer;
+}
+  /* Adjust the retry button */
+  #retry-button {
+    width: 60px; /* Smaller width for mobile */
+    height: 30px; /* Smaller height for mobile */
+    font-size: 15px; /* Smaller font size for mobile */
+    left: 10px; /* Adjust position if needed */
+  }
+}
