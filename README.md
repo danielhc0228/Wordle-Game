@@ -6,5 +6,3 @@ If a letter from the guess from the user is almost correct (wrong position, corr
 if the position is also correct, it is highlighted green.
 
 Use the hints to guess the word.
-
-Followed YouTube video guide which contained errors, fixed errors by Daniel Chung
